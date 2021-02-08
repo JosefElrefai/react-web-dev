@@ -1,0 +1,26 @@
+@import '../config';
+#navbar {
+	padding: 0 2rem;
+	margin-bottom: 1rem;
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		height: 4rem;
+		max-width: 1100px;
+		.page-name {
+			text-transform: uppercase;
+		}
+
+		.nav-links {
+			display: flex;
+			gap: 1.5rem;
+			font-size: 1.2rem;
+		}
+
+		a {
+			color: $main-color;
+		}
+	}
+}

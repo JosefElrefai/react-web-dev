@@ -1,0 +1,35 @@
+#check-out-page {
+	padding-top: 2rem;
+	.container {
+		.cart-item {
+			display: flex;
+			gap: 0.5rem;
+			align-items: center;
+			padding: 1rem;
+
+			strong {
+				margin-right: 0.5rem;
+			}
+			&:nth-child(odd) {
+				background-color: #ddd;
+			}
+			&:nth-child(even) {
+				background-color: #eee;
+			}
+
+			.item-details {
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}
+		}
+		.main-button {
+			margin-top: 1rem;
+			margin-right: 0.5rem;
+		}
+		.grand-total {
+			display: inline;
+		}
+	}
+}

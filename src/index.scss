@@ -1,0 +1,58 @@
+@import './config';
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+button {
+	outline: none;
+	border: none;
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+// Utility classes
+
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 2rem;
+}
+
+.dark-button {
+	color: white;
+	background: $dark-color;
+	padding: 0.5rem;
+}
+
+.main-button {
+	color: white;
+	background: $main-color;
+	padding: 0.5rem;
+}
+
+.lead {
+	font-weight: 300;
+	letter-spacing: 0.5px;
+}
+
+.small-button {
+	height: 1.7rem;
+	width: 1.7rem;
+	font-size: 1rem;
+}

@@ -1,0 +1,43 @@
+@import '../../config';
+
+#ballon-detail {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	gap: 1rem;
+	width: 45vw;
+	min-width: 500px;
+
+	.details {
+		padding: 1.2rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 100%;
+		background: #ddd;
+		border: 2px solid $dark-color;
+
+		ul {
+			display: flex;
+			flex-direction: column;
+			gap: 0.2rem;
+			margin-bottom: 1rem;
+		}
+
+		.add-to-cart {
+			display: flex;
+			align-items: center;
+			gap: 0.5rem;
+
+			.small-button {
+				background-color: $dark-color;
+				color: #fff;
+			}
+
+			.main-button {
+				height: 1.7rem;
+				padding: 0 0.5rem;
+				font-size: 0.8rem;
+			}
+		}
+	}
+}

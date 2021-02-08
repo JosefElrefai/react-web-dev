@@ -1,0 +1,1 @@
+export const mainImgBaseUrl = 'https://balloons.thetc.se';
