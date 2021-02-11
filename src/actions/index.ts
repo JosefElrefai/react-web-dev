@@ -12,3 +12,16 @@ export const addToCart = (obj: CartObject): AddToCartAction => {
         payload: obj
     }
 }
+
+//just for testing
+export interface RemoveFromCartAction {
+    type: ActionTypes.removeFromCart;
+    payload: {potato: number };
+}
+
+export const removeFromCart = (potato: number): RemoveFromCartAction=> {
+    return {
+        type: ActionTypes.removeFromCart,
+        payload: {potato: potato}
+    };
+}

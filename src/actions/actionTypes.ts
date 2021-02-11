@@ -1,7 +1,8 @@
-import { AddToCartAction } from './index';
+import { AddToCartAction, RemoveFromCartAction } from './index';
 
 export enum ActionTypes {
-    addToCart
+    addToCart,
+    removeFromCart
 }
 
-export type Action = AddToCartAction;
+export type Action = AddToCartAction | RemoveFromCartAction;
